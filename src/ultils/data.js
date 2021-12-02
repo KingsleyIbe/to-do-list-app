@@ -26,4 +26,4 @@ const listItems = [
     }
   ]
 
-export {listItems};
+export default listItems;

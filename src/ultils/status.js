@@ -1,5 +1,5 @@
-import listItems from './template';
-import displayListItems from './template';
+import listItems from './data.js';
+import displayListItems from './template.js';
 
 const inputList = displayListItems();
 
@@ -11,7 +11,6 @@ const updateSaver = (listItems) => {
         const superParent = parent.parentNode;
         const index = Array.prototype.indexOf.call(superParent.children, parent);
         const currentItem = listItems[index].completed;
-        console.log(item)
         if (currentItem) {
           listItems[index].completed = false;
         } else {
@@ -33,6 +32,7 @@ function storeData() {
 function updateStorage() {
   window.addEventListener('load', () => {
     const localItems = JSON.parse(localStorage.getItem('localItems'));
+    // console.log(listItems)
     listItems.splice(0, listItems.length, ...localItems);
     inputList.forEach((item) => {
       const parent = item.parentNode;
@@ -45,5 +45,6 @@ function updateStorage() {
     });
   });
 }
+
 
 export { updateSaver, storeData, updateStorage };
