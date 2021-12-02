@@ -1,0 +1,70 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.generalContainer {
+  width: 50%;
+  position: absolute;
+  left: 300px;
+  margin-top: 100px;
+  border: 1px solid #2b2a2a;
+  padding-left: 20px;
+}
+
+.generalContainer .appHeading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 69%;
+  width: 100%;
+}
+
+.generalContainer .form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 62%;
+  width: 100%;
+}
+
+.generalContainer .form input {
+  font-size: 16px;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.generalContainer .item-conatiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 5%;
+  padding-left: 0;
+  width: 100%;
+}
+
+.generalContainer .item-conatiner input {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.generalContainer .item-conatiner i {
+  padding-left: 350px;
+  justify-content: end;
+  opacity: 0.5;
+}
+
+.generalContainer .clear {
+  text-align: center;
+  font-size: 23px;
+}/*# sourceMappingURL=style.css.map */
