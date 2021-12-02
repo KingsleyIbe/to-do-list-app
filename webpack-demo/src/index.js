@@ -24,8 +24,13 @@ const listItems = [
   },
   {
     description: "Join morning session call",
-    completed: true,
+    completed: false,
     index: 4
+  },
+  {
+    description: "Join morning session call",
+    completed: true,
+    index: 5
   }
 ]
 

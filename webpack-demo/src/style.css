@@ -17,6 +17,7 @@ li {
   border: 1px solid #2b2a2a;
   padding-left: 20px;
 }
+
 .generalContainer .appHeading {
   display: flex;
   flex-direction: row;
@@ -25,6 +26,7 @@ li {
   gap: 69%;
   width: 100%;
 }
+
 .generalContainer .form {
   display: flex;
   flex-direction: row;
@@ -33,12 +35,14 @@ li {
   gap: 62%;
   width: 100%;
 }
+
 .generalContainer .form input {
   font-size: 16px;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .generalContainer .item-conatiner {
   display: flex;
   flex-direction: row;
@@ -48,15 +52,18 @@ li {
   padding-left: 0;
   width: 100%;
 }
+
 .generalContainer .item-conatiner input {
   margin-left: 0;
   padding-left: 0;
 }
+
 .generalContainer .item-conatiner i {
   padding-left: 350px;
   justify-content: end;
   opacity: 0.5;
 }
+
 .generalContainer .clear {
   text-align: center;
   font-size: 23px;
