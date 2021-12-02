@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# TO-DO-LIST-APPLICATION
+# TO-DO-LIST-APPLICATION.
 
 > This is the first milestone in the to-do-list website project.
 
