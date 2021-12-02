@@ -29,7 +29,7 @@ const listItems = [
   },
   {
     description: "Join morning session call",
-    completed: false,
+    completed: true,
     index: 5
   }
 ]
