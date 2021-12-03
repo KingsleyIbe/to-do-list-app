@@ -1,11 +1,4 @@
-import _ from 'lodash';
 import './css/style.css';
-import { userActions, saveData, updateStorage } from './ultils/status.js';
-import displayListItems from './ultils/template.js';
+import userActions from './ultils/status.js';
 
-
-displayListItems();
 userActions();
-saveData();
-updateStorage();
-
