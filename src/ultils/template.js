@@ -10,9 +10,12 @@ import listItems from './data.js';
       listItem.innerHTML = `<div class="item-container"><label for="checked"></label><input class="checked list-input" type="checkbox" data-id=${index} /></label><p>${description}</p><i class="fas fa-ellipsis-v"></i></div><hr>`;
       list.appendChild(listItem);
     }
+    
+  const clearElement = document.querySelector('.clear');
+  clearElement.innerText = 'Clear all completed';
+    const inputList = document.querySelectorAll('.list-input');
+  return inputList;
 
-    const clearField = document.querySelector('.clear');
-    clearField.innerText = 'Clear all completed';
   }
 
   export default displayListItems;
