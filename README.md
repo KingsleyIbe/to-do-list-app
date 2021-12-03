@@ -38,6 +38,27 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 [download](https://code.visualstudio.com/download) VScode.
 [Watch this video](https://www.youtube.com/watch?v=MlIzFUI1QGA) on how to install VScode on windows
+
+### Usage
+
+Clone project, run in your terminal:
+
+```$ git clone https://github.com/KingsleyIbe/to-do-list-app.git ```
+
+Open the cloned project in your code editor and run:
+
+``` $ cd to-do-list-app ```
+
+ Install npm packages, run:
+
+``` $ npm i or npm install ```
+
+Then run the server:
+
+``` $ npm start ```
+
+
+
 ## Author
 
 - GitHub: [@githubhandle](https://github.com/kingsleyibe)
