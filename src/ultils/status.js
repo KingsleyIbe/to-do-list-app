@@ -1,50 +1,26 @@
 import listItems from './data.js';
 import displayListItems from './template.js';
 
-const inputList = displayListItems();
+displayListItems();
 
-const updateSaver = (listItems) => {
-  // document.addEventListener('DOMContentLoaded', () => {
-    inputList.forEach((item) => {
-      item.addEventListener('change', () => {
-        const parent = item.parentNode;
-        const superParent = parent.parentNode;
-        const index = Array.prototype.indexOf.call(superParent.children, parent);
-        const currentItem = listItems[index].completed;
-        if (currentItem) {
-          listItems[index].completed = false;
-        } else {
-          listItems[index].completed = true;
-        };
-      });
-    });
-  };
-// };
-
-function storeData() {
-  inputList.forEach((item) => {
-    item.addEventListener('change', () => {
-      localStorage.setItem('itemsLocal', JSON.stringify(listItems));
+const updateItems = () => {
+  document.querySelectorAll('.list-item .checked').forEach((item) => {
+    item.addEventListener('change', (e) => {
+      const data = JSON.parse(localStorage.getItem('listitems')) || listItems
+      const filtered = data.filter((item) => item.index !== parseInt(e.target.dataset.id, 10))
+      const currentData = data.find((item) => item.index === parseInt(e.target.dataset.id, 10))
+      currentData.completed = !currentData.completed;
+      filtered.push(currentData);
+      // localStorage.setItem('listitems', JSON.stringify(filtered));
+        localStorage.setItem('CurrentData', JSON.stringify(currentData));    
     });
   });
 };
 
-function updateStorage() {
-  window.addEventListener('load', () => {
-    const localItems = JSON.parse(localStorage.getItem('localItems'));
-    // console.log(listItems)
-    listItems.splice(0, listItems.length, ...localItems);
-    inputList.forEach((item) => {
-      const parent = item.parentNode;
-      const superParent = parent.parentNode;
-      const index = Array.prototype.indexOf.call(superParent.children, parent);
-      const currentItem = localItems[index].completed;
-      if (currentItem) {
-        item.setAttribute('checked', '');
-      }
-    });
-  });
+const storedData = JSON.parse(localStorage.getItem('listItems') || 'null');
+if (storedData !== null) {
+  listItems.length = 0;
+  listItems.push(...storedData);
 }
 
-
-export { updateSaver, storeData, updateStorage };
+export default updateItems;
