@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 body {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -26,19 +25,16 @@ li {
   border: 1px solid #cfd0d1;
   padding-left: 20px;
 }
-
 .generalContainer i {
   opacity: 0.5;
   cursor: pointer;
 }
-
 .generalContainer hr {
   width: 100%;
   height: 1px;
   border: none;
   background-color: #dfe1e6;
 }
-
 .generalContainer .appHeading {
   display: flex;
   flex-direction: row;
@@ -47,7 +43,6 @@ li {
   gap: 69%;
   width: 100%;
 }
-
 .generalContainer .form {
   display: flex;
   flex-direction: row;
@@ -56,14 +51,12 @@ li {
   gap: 62%;
   width: 100%;
 }
-
 .generalContainer .form input {
   font-size: 16px;
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 .generalContainer .item-container {
   display: flex;
   flex-direction: row;
@@ -73,13 +66,20 @@ li {
   padding-left: 0;
   width: 100%;
 }
-
 .generalContainer .item-container i {
-  padding-left: 250px;
-  justify-content: end;
-  opacity: 0.5;
+  padding-left: 325px;
 }
-
+.generalContainer .item-container .remove-btn {
+  position: absolute;
+  left: 300px;
+}
+.generalContainer .item-container .edit {
+  position: absolute;
+  left: 290px;
+}
+.generalContainer .item-container .description {
+  cursor: pointer;
+}
 .generalContainer .clear {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -89,7 +89,6 @@ li {
   padding-bottom: 20px;
   cursor: pointer;
 }
-
 .generalContainer .clear:hover {
   text-decoration: underline;
   background: #b6bac4;
