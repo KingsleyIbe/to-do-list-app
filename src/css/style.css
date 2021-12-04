@@ -75,9 +75,21 @@ li {
 }
 
 .generalContainer .item-container i {
-  padding-left: 250px;
-  justify-content: end;
-  opacity: 0.5;
+  padding-left: 325px;
+}
+
+.generalContainer .item-container .edit {
+  position: absolute;
+  left: 290px;
+}
+
+.generalContainer .item-container .description {
+  cursor: pointer;
+  border: none;
+}
+
+.generalContainer .item-container .edit-input {
+  display: none;
 }
 
 .generalContainer .clear {

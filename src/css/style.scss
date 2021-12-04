@@ -73,9 +73,21 @@ li {
     width: 100%;
 
     i {
-      padding-left: 250px;
-      justify-content: end;
-      opacity: 0.5;
+      padding-left: 325px;
+    }
+
+    .edit {
+      position: absolute;
+      left: 290px;
+    }
+
+    .description {
+      cursor: pointer;
+      border: none;
+    }
+
+    .edit-input {
+      display: none;
     }
   }
 
