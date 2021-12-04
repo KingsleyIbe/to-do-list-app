@@ -76,11 +76,6 @@ li {
       padding-left: 325px;
     }
 
-    .remove-btn {
-      position: absolute;
-      left: 300px;
-    }
-
     .edit {
       position: absolute;
       left: 290px;
@@ -88,6 +83,11 @@ li {
 
     .description {
       cursor: pointer;
+      border: none;
+    }
+
+    .edit-input {
+      display: none;
     }
   }
 

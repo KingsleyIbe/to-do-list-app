@@ -69,16 +69,16 @@ li {
 .generalContainer .item-container i {
   padding-left: 325px;
 }
-.generalContainer .item-container .remove-btn {
-  position: absolute;
-  left: 300px;
-}
 .generalContainer .item-container .edit {
   position: absolute;
   left: 290px;
 }
 .generalContainer .item-container .description {
   cursor: pointer;
+  border: none;
+}
+.generalContainer .item-container .edit-input {
+  display: none;
 }
 .generalContainer .clear {
   font-family: "Poppins", sans-serif;
