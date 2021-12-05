@@ -1,11 +1,10 @@
 import './css/style.css';
 import displayListItems from './ultils/template.js';
 import { addItem, init } from './ultils/component.js';
-// import removeTask from './ultils/component.js';
-// import userActions from './ultils/status.js';
+import toggleTheme from './ultils/toggle-theme.js';
 
 displayListItems();
-// userActions();
+toggleTheme();
 
 const inputField = document.querySelector('#text-input');
 document.addEventListener('keypress', (e) => {

@@ -30,13 +30,13 @@ function displayListItems() {
     <hr>`;
     list.appendChild(todoTask);
   }
-  document.querySelectorAll(".checked").forEach((item) => {
-    item.addEventListener("change", () => {
+  document.querySelectorAll('.checked').forEach((item) => {
+    item.addEventListener('change', () => {
       const { index } = item.dataset;
       const changeItem = Todo.data.find((el) => el.index == index);
       if (changeItem.completed === true) changeItem.completed = false;
       else if (changeItem.completed === false) changeItem.completed = true;
-      localStorage.setItem("todoList", JSON.stringify(Todo.data));
+      localStorage.setItem('todoList', JSON.stringify(Todo.data));
       displayListItems();
     });
   });

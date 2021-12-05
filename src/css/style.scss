@@ -106,3 +106,35 @@ li {
     background: #b6bac4;
   }
 }
+
+.toggle-dark-mode {
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+
+  .fa-sun {
+    padding-right: 2px;
+  }
+
+.dark-mode {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+
+  input::placeholder {
+    color: #fff;
+  }
+
+  #text-input,
+  .clear {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .description {
+    color: #fff;
+    background-color: #000;
+  }
+}
+}
