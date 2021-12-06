@@ -105,4 +105,44 @@ li {
 .generalContainer .clear:hover {
   text-decoration: underline;
   background: #b6bac4;
+}
+
+.toggle-dark-mode {
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.toggle-dark-mode .fa-sun {
+  padding-right: 2px;
+}
+
+.toggle-dark-mode .dark-mode {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.toggle-dark-mode .dark-mode input::-moz-placeholder {
+  color: #fff;
+}
+
+.toggle-dark-mode .dark-mode input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.toggle-dark-mode .dark-mode input::placeholder {
+  color: #fff;
+}
+
+.toggle-dark-mode .dark-mode #text-input,
+.toggle-dark-mode .dark-mode .clear {
+  background-color: #000;
+  color: #fff;
+}
+
+.toggle-dark-mode .dark-mode .description {
+  color: #fff;
+  background-color: #000;
 }/*# sourceMappingURL=style.css.map */
