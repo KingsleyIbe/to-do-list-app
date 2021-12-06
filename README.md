@@ -4,7 +4,7 @@
 
 > This is the first milestone in the to-do-list website project.
 
-![screenshot](/webpack-demo/src/images/screenShot.jpeg)
+![screenshot](/src/images/screenShot.jpeg)
 
 Application was built with HTML, CSS (SASS), JavaScript and Webpack to meet the need of a to-do-list website. 
 Users will be able to add to the list, remove accomplished tasks, drag and drop tasks as desired, with other features.
