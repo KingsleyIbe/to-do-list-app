@@ -117,24 +117,24 @@ li {
     padding-right: 2px;
   }
 
-.dark-mode {
-  background-color: #000;
-  color: #fff;
-  cursor: pointer;
-
-  input::placeholder {
-    color: #fff;
-  }
-
-  #text-input,
-  .clear {
+  .dark-mode {
     background-color: #000;
     color: #fff;
-  }
+    cursor: pointer;
 
-  .description {
-    color: #fff;
-    background-color: #000;
+    input::placeholder {
+      color: #fff;
+    }
+
+    #text-input,
+    .clear {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .description {
+      color: #fff;
+      background-color: #000;
+    }
   }
-}
 }
