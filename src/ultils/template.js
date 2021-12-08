@@ -1,4 +1,5 @@
 import { addItem, updateListItem } from "./component.js";
+import { getLocalStorage, setLocalStorage } from "./localStorage.js";
 import Todo from "./Todo.js";
 
 const storedListItems = JSON.parse(localStorage.getItem("todoList") || "[]");
@@ -36,7 +37,7 @@ function displayListItems() {
       const changeItem = Todo.data.find((el) => el.index == index);
       if (changeItem.completed === true) changeItem.completed = false;
       else if (changeItem.completed === false) changeItem.completed = true;
-      localStorage.setItem('todoList', JSON.stringify(Todo.data));
+      setLocalStorage();
       displayListItems();
     });
   });

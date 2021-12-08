@@ -1,4 +1,5 @@
 import displayListItems from "./template.js";
+import { getLocalStorage, setLocalStorage } from "./localStorage.js";
 
 const addItem = (items, newTodo) => {
   items.push({
@@ -22,11 +23,11 @@ const init = (data) => {
 
 const updateListItem = (e) => {
   const id = Number(e.target.getAttribute("data-index"));
-  const data = JSON.parse(localStorage.getItem("todoList"));
+  const data = getLocalStorage();
   const listItemObj = data.find((x) => x.index === id);
   listItemObj.description = e.target.textContent;
   data.splice(id - 1, 0, listItemObj);
-  localStorage.setItem("todoList", JSON.stringify(data));
+  setLocalStorage();
 };
 
 export { addItem, init, updateListItem };
