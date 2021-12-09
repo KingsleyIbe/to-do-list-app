@@ -1,5 +1,6 @@
 import displayListItems from './template.js';
 import { getLocalStorage, setLocalStorage } from './localStorage.js';
+import Todo from './Todo.js';
 
 const addItem = (items, newTodo) => {
   items.push({
@@ -8,6 +9,18 @@ const addItem = (items, newTodo) => {
     completed: false,
   });
   localStorage.setItem('todoList', JSON.stringify(items));
+};
+
+const deleteItem = () => {
+  document.querySelectorAll('.remove-btn').forEach((item) => {
+    item.addEventListener('click', () => {
+      const { index } = item.dataset;
+      const delItem = Todo.data.find((el) => el.index == index);
+      Todo.data = Todo.data.filter((el) => el !== delItem);
+      localStorage.setItem('todoList', JSON.stringify(Todo.data));
+      displayListItems();
+    });
+  });
 };
 
 const init = (data) => {
@@ -30,4 +43,6 @@ const updateListItem = (e) => {
   setLocalStorage();
 };
 
-export { addItem, init, updateListItem };
+export {
+  addItem, deleteItem, init, updateListItem,
+};

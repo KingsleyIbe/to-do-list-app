@@ -42,16 +42,6 @@ function displayListItems() {
     });
   });
 
-  document.querySelectorAll('.remove-btn').forEach((item) => {
-    item.addEventListener('click', () => {
-      const { index } = item.dataset;
-      const delItem = Todo.data.find((el) => el.index == index);
-      Todo.data = Todo.data.filter((el) => el !== delItem);
-      localStorage.setItem('todoList', JSON.stringify(Todo.data));
-      displayListItems();
-    });
-  });
-
   const clearAll = document.querySelector('.clear');
   clearAll.addEventListener('click', () => {
     Todo.data = Todo.data.filter((el) => el.completed !== true);
